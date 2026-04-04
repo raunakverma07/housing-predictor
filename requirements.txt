@@ -1,5 +1,4 @@
-pandas
-csv file
-scikit-learn
 streamlit
+scikit-learn
+pandas
 joblib
