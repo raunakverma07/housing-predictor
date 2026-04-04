@@ -2,7 +2,7 @@ import streamlit as st
 import joblib
 
 # Load model
-model = joblib.load("housing_model(1).pkl")
+model = joblib.load("my_housing_model.pkl")
 
 st.title("🏠 House Price Prediction")
 
