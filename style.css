@@ -1,0 +1,498 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background: #0f172a;
+  color: white;
+}
+
+/* Navbar */
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background: #020617;
+  position: sticky;
+  top: 0;
+}
+
+.navbar ul{
+  display: flex;
+  list-style: none;
+  gap: 10px;   /* 👈 yahi main spacing hai */
+}
+
+.navbar a{
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: 0.5px;  /* thoda premium feel */
+  transition: 0.3s;
+  padding: 5px 0;
+  letter-spacing: 1px;
+}
+
+
+.navbar a:hover{
+  color: cyan;
+}
+
+/* Hero */
+/* Hero Layout */
+.hero{
+  min-height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+  gap: 40px;
+}
+
+.hero-text{
+  max-width: 500px;
+}
+
+.hero-text h1{
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.hero-text p{
+  margin-bottom: 25px;
+  color: #cbd5e1;
+}
+
+/* Button fix */
+.hero button{
+  padding: 12px 28px;
+  border: none;
+  background: #38bdf8;
+  color: black;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.hero button:hover{
+  background: #0ea5e9;
+}
+
+/* Image styling */
+.hero-img img{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #38bdf8;
+  box-shadow: 0 0 25px rgba(56,189,248,0.5);
+}
+
+/* 🔹 Cards Section */
+.cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 70px;              /* enough spacing */
+  padding: 80px;
+}
+
+/* 🔹 Individual Card */
+.card{
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(8px);
+  padding: 45px 30px;
+  text-align: center;
+  border-radius: 14px;
+  cursor: pointer;
+  border: 1px solid rgba(255,255,255,0.08);
+
+  transition: transform 0.25s ease, 
+              box-shadow 0.25s ease, 
+              border-color 0.25s ease;
+}
+
+/* 🔹 Card Text */
+.card h2{
+  font-size: 20px;
+  transition: 0.25s ease;
+}
+
+/* 🔥 Hover Effect (NO overlap, clean) */
+.card:hover{
+  transform: translateY(-6px);   /* controlled movement */
+  border-color: #38bdf8;
+
+  /* soft shadow (no spreading into other cards) */
+  box-shadow: 0 8px 18px rgba(0,0,0,0.35);
+}
+
+/* 🔹 Text Slight Zoom */
+.card:hover h2{
+  font-size: 22px;
+}
+/* 🔹 Page Layout */
+.page{
+  min-height: 80vh;
+  padding: 100px 60px;
+  text-align: center;
+}
+
+.page h1{
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.subtitle{
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 50px;
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+/* 🔹 Phase Cards */
+.phase-container{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.phase-card{
+  width: 220px;
+  padding: 40px;
+  background: rgba(255,255,255,0.04);
+  border-radius: 12px;
+  cursor: pointer;
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: 0.3s;
+}
+
+.phase-card h2{
+  margin-bottom: 10px;
+}
+
+.phase-card p{
+  color: #94a3b8;
+}
+
+/* 🔥 Hover */
+.phase-card:hover{
+  transform: translateY(-6px);
+  border-color: #38bdf8;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.3);
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 15px 60px;
+  width: 100%;
+
+  position: sticky;
+  top: 0;
+
+  background: #020617;
+  z-index: 1000;
+}
+
+/* Logo */
+.logo{
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* Nav items */
+.navbar ul{
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a{
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.navbar a:hover{
+  color: #38bdf8;
+}
+
+/* 🔹 About Section Layout */
+.page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+  gap: 15px;
+}
+
+.page h1{
+  margin-bottom: 10px;
+}
+
+/* 🔹 About Box */
+.page p{
+  max-width: 650px;
+  background: rgba(255,255,255,0.04);
+  padding: 30px 35px;
+  border-radius: 14px;
+
+  line-height: 1.7;
+  color: #cbd5e1;
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* 🔥 Hover Effect (premium, not loud) */
+.page p:hover{
+  transform: translateY(-6px);
+  border-color: #38bdf8;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+}
+
+/* ✨ Subtle glow line effect */
+.page p::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: #38bdf8;
+  transition: 0.3s;
+  border-radius: 10px 10px 0 0;
+}
+
+.page p:hover::before{
+  width: 100%;
+}
+/* 🔥 RESET (MOST IMPORTANT) */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+}
+
+/* page */
+.page{
+  padding: 20px 20px;   /* tight spacing */
+}
+
+/* heading */
+.page h1{
+  margin: 10px 0;
+}
+
+/* 🔹 Phase Page Layout */
+.phase-page{
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.phase-page h1{
+  font-size: 36px;
+  margin-bottom: 5px;
+}
+
+.phase-page h3{
+  color: #94a3b8;
+  margin-bottom: 25px;
+}
+
+/* 🔹 Content Box */
+.content-box{
+  max-width: 750px;
+  margin: auto;
+  background: rgba(255,255,255,0.04);
+  padding: 35px 40px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.08);
+
+  line-height: 1.7;
+  color: #cbd5e1;
+
+  transition: 0.3s;
+}
+
+/* 🔥 Hover effect */
+.content-box:hover{
+  transform: translateY(-5px);
+  border-color: #38bdf8;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+}
+
+/* Paragraph spacing */
+.content-box p{
+  margin-bottom: 15px;
+}
+
+/* 🔹 Page Layout */
+.page{
+  min-height: 80vh;
+  padding: 100px 60px;
+  text-align: center;
+}
+
+.page h1{
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.subtitle{
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 50px;
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+/* 🔹 Phase Cards */
+.phase-container{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.phase-card{
+  width: 220px;
+  padding: 40px;
+  background: rgba(255,255,255,0.04);
+  border-radius: 12px;
+  cursor: pointer;
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: 0.3s;
+}
+
+.phase-card h2{
+  margin-bottom: 10px;
+}
+
+.phase-card p{
+  color: #94a3b8;
+}
+
+/* 🔥 Hover */
+.phase-card:hover{
+  transform: translateY(-6px);
+  border-color: #38bdf8;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.3);
+}
+
+.phase-page{
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* Slightly more prominent heading for final phase */
+.phase-page h1{
+  font-size: 38px;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.phase-page h3{
+  color: #38bdf8;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+/* Content box - slightly more refined */
+.content-box{
+  max-width: 780px;
+  margin: auto;
+  background: rgba(255,255,255,0.05); /* slightly brighter than others */
+  padding: 40px 45px;
+  border-radius: 16px;
+  border: 1px solid rgba(56,189,248,0.15); /* bluish tint border */
+
+  line-height: 1.75;
+  color: #e2e8f0;
+
+  transition: all 0.3s ease;
+}
+
+/* Hover effect (more premium for final phase) */
+.content-box:hover{
+  transform: translateY(-6px);
+  border-color: #38bdf8;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.45);
+}
+
+/* Paragraph spacing */
+.content-box p{
+  margin-bottom: 16px;
+  font-size: 15.5px;
+}
+
+/* Navbar slight enhancement (optional consistency) */
+.navbar{
+  background: #020617;
+  backdrop-filter: blur(6px);
+}
+
+/* Back/Home links hover */
+.navbar a:hover{
+  color: #38bdf8;
+}
+.page{
+  min-height: 80vh;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.subtitle{
+  max-width: 700px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+.phase-container{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.phase-card{
+  width: 220px;
+  padding: 35px;
+  background: rgba(255,255,255,0.04);
+  border-radius: 12px;
+  cursor: pointer;
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: 0.3s;
+}
+
+.phase-card h2{
+  margin-bottom: 10px;
+}
+
+.phase-card p{
+  color: #94a3b8;
+}
+
+.phase-card:hover{
+  transform: translateY(-6px);
+  border-color: #38bdf8;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.3);
+}
