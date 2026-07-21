@@ -265,7 +265,7 @@ st.markdown("""
         <div class="dev-card-inner">
             <div class="dev-avatar">RV</div>
             <div class="dev-name">Raunak Verma</div>
-            <div class="dev-role">MACHINE LEARNING & WEB APP DEVELOPER</div>
+            <div class="dev-role">AI ENTHUSIAST | ASPIRING DATA SCIENTIST</div>
             <div class="dev-links">
                 <a class="dev-btn dev-btn-portfolio" href="https://raunakverma.vercel.app" target="_blank">🔗 Know More About Me</a>
                 <a class="dev-btn dev-btn-linkedin" href="https://www.linkedin.com/in/raunakverma07" target="_blank">💼 LinkedIn</a>
